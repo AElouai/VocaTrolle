@@ -1,0 +1,28 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.root {
+    -fx-background-color: yellow;
+}
+
+.about {
+    background: yellow;
+}
+
+#Ali {
+    -fx-font-size : 15px;
+    
+}
+
+#app {
+    -fx-animated: true;
+    animation: ease-in-out;
+    
+}
+
+#aboutAli {
+    -fx-font-size : 15px;
+    font-family: serif;
+    color: red;
+}

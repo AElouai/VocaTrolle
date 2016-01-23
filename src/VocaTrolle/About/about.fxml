@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="261.0" prefWidth="244.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Region prefHeight="294.0" prefWidth="11.0" />
+      <VBox prefHeight="261.0" prefWidth="223.0">
+         <children>
+            <Label fx:id="titer1" prefHeight="17.0" prefWidth="188.0" text="About VocaTrolle  :" />
+            <Region prefHeight="9.0" prefWidth="184.0" />
+            <Text fx:id="app" strokeType="OUTSIDE" strokeWidth="0.0" text="this was created for an idea of learning vocabulary on a funny way  and implemented for the purpose of a java exam in FST Settat " wrappingWidth="223.13671875" />
+            <Label fx:id="titer2" prefHeight="31.0" prefWidth="183.0" text="created by :" />
+            <Region prefHeight="10.0" prefWidth="184.0" />
+            <Text fx:id="Ali" strokeType="OUTSIDE" strokeWidth="0.0" text="Ali Elouai " wrappingWidth="221.9375" />
+            <Text fx:id="aboutAli" strokeType="OUTSIDE" strokeWidth="0.0" text="if by any reason you want to contact me you can email me at : ali.elouai.pro@gmail.com or visit my github page for new version :  https://github.com/happy-ali/" wrappingWidth="223.13671875" />
+         </children>
+      </VBox>
+      <Region prefHeight="294.0" prefWidth="17.0" />
+   </children>
+</HBox>

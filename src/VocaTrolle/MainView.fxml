@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="418.0" prefWidth="461.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="VocaTrolle.MainViewController">
+   <children>
+      <MenuBar prefHeight="25.0" prefWidth="215.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#close" text="Close" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Edit">
+               <items>
+                  <Menu fx:id="MitemLang" mnemonicParsing="false" text="Language">
+                     <items>
+                        <MenuItem fx:id="ar" mnemonicParsing="false" onAction="#changeLangAr" text="AR" />
+                        <MenuItem fx:id="en" mnemonicParsing="false" onAction="#changeLangEn" text="EN" />
+                        <MenuItem fx:id="es" mnemonicParsing="false" onAction="#changeLangEs" text="ES" />
+                        <MenuItem fx:id="fr" mnemonicParsing="false" onAction="#changeLangFr" text="FR" />
+                     </items></Menu>
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#About" text="About" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <HBox prefHeight="356.0" prefWidth="518.0">
+         <children>
+            <Region layoutY="9.0" prefHeight="356.0" prefWidth="16.0" />
+            <HBox layoutX="14.0" prefHeight="356.0" prefWidth="464.0">
+               <children>
+                  <VBox layoutX="14.0" layoutY="7.0">
+                     <children>
+                        <Region prefHeight="31.0" prefWidth="241.0" />
+                        <StackPane fx:id="spane">
+                           <children>
+                              <ImageView fx:id="img" fitHeight="132.0" fitWidth="241.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="CENTER" />
+                           </children>
+                        </StackPane>
+                        <VBox layoutX="16.0" layoutY="71.0" prefHeight="206.0" prefWidth="197.0">
+                           <children>
+                              <VBox layoutX="16.0" layoutY="50.0" prefHeight="149.0" prefWidth="264.0">
+                                 <children>
+                                    <HBox layoutX="16.0" layoutY="50.0" prefHeight="35.0" prefWidth="361.0">
+                                       <children>
+                                          <Label fx:id="Toption" layoutX="72.0" layoutY="78.0" prefHeight="35.0" prefWidth="249.0" text="Label" />
+                                       </children>
+                                    </HBox>
+                                    <TextField fx:id="Rword" layoutX="16.0" layoutY="106.0" onAction="#IsValide" prefHeight="36.0" prefWidth="224.0" />
+                                    <Region layoutX="16.0" layoutY="153.0" prefHeight="25.0" prefWidth="207.0" />
+                                    <Button fx:id="Btest" layoutX="16.0" layoutY="178.0" mnemonicParsing="false" onAction="#IsValide" prefHeight="36.0" prefWidth="249.0" text="Tester" />
+                                 </children>
+                              </VBox>
+                              <Button fx:id="Breload" layoutX="110.0" layoutY="231.0" mnemonicParsing="false" onAction="#Reload" prefHeight="39.0" prefWidth="245.0" text="Reload" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+                  <Region layoutX="366.0" prefHeight="356.0" prefWidth="10.0" />
+                  <VBox layoutX="386.0" layoutY="14.0" prefHeight="356.0" prefWidth="207.0">
+                     <children>
+                        <HBox layoutX="386.0" layoutY="3.0" prefHeight="36.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="Lscore" layoutX="386.0" layoutY="15.0" prefHeight="36.0" prefWidth="125.0" text="Score :" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS" />
+                              <Label fx:id="Tscore" layoutX="497.0" layoutY="16.0" prefHeight="36.0" prefWidth="160.0" text="00" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS" />
+                           </children>
+                        </HBox>
+                        <ListView fx:id="LHisto" layoutX="386.0" layoutY="48.0" prefHeight="306.0" prefWidth="197.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <Region layoutX="601.0" layoutY="52.0" prefHeight="356.0" prefWidth="13.0" />
+         </children>
+      </HBox>
+      <HBox layoutX="16.0" layoutY="316.0" prefHeight="25.0" prefWidth="413.0">
+         <children>
+            <Region prefHeight="25.0" prefWidth="39.0" />
+            <Label fx:id="Loptionsize" layoutX="31.0" layoutY="317.0" prefHeight="24.0" prefWidth="86.0" text="Option size  :" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS" />
+            <TextField fx:id="Rwordsize" layoutX="155.0" layoutY="317.0" prefHeight="25.0" prefWidth="97.0" promptText="word size" text="7" />
+            <Region prefHeight="25.0" prefWidth="9.0" />
+            <Button fx:id="Bplay" layoutX="312.0" layoutY="316.0" mnemonicParsing="false" onAction="#playGame" prefHeight="25.0" prefWidth="165.0" text="Play" />
+            <Region prefHeight="25.0" prefWidth="15.0" />
+            <ImageView fx:id="imglang" fitHeight="26.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </HBox>
+      <Region layoutX="209.0" layoutY="357.0" prefHeight="12.0" prefWidth="416.0" />
+   </children>
+</VBox>

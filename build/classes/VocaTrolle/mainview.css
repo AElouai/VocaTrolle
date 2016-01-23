@@ -1,0 +1,26 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    -fx-animated: false;
+    -fx-background-color: turquoise;
+    -fx-font-size :18px; 
+
+}
+.root {
+    -fx-background-color: turquoise;
+    -fx-font-size :13px; 
+}
+#Tscore{
+    text-align: center;
+    color: red;
+    -fx-font-size : 14px;
+    -fx-font :bold;
+}
+
+#Toption{
+    -fx-background-color: aquamarine;
+    color: blue;
+    -fx-font-size : 28px;
+}
